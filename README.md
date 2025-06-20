@@ -14,24 +14,36 @@ isDev points the app to the proper file path for the project. In the dev environ
 4. Run npm run init
 5. Run npm run dev
 
+# Changing Repo
+
+If you want to commit to your own repo perform the following commands:
+1. rm -rf .git
+2. git init
+3. git add .
+4. git commit -m "insert your initial commit here"
+5. Create new repo on GitHub or where you have your code
+6. git remote add origin *your git link*
+7. git push -u origin main (or master depending on your repo)
+
 That's it! You're ready to start building in Electron!
 
 This starter template is based off of configurations from the freeCodeCamp Electron tutorial
 Link is here if you'd like to watch it: https://www.youtube.com/watch?v=fP-371MN0Ck&t=2716s
 
-
-When you're ready to build your app, run one of the following commands:
+When you're ready to build your app, run one of the following commands. The output will be the dist folder.
 
 # Mac M Series Chips:
+
 npm run dist:mac-silicon
 
 # Mac M Initel Chips:
+
 npm run dist:mac-intel
 
 # Windows:
+
 npm run dist:win
 
 # Linux:
-npm run dist:linux
 
-The output will be the dist folder
+npm run dist:linux
